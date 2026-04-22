@@ -79,6 +79,44 @@
             margin-top: 18px;
             opacity: 0.75;
         }
+
+        /* Barra de busqueda */
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 28px 20px 10px;
+            background-color: #fff8f9;
+        }
+
+        .buscador {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            max-width: 420px;
+            border-bottom: 2px solid #d63f7a;
+            padding-bottom: 6px;
+        }
+
+        .buscador svg {
+            flex-shrink: 0;
+            color: #d63f7a;
+        }
+
+        .buscador input {
+            border: none;
+            outline: none;
+            background: transparent;
+            font-family: 'Nunito', sans-serif;
+            font-size: 1rem;
+            color: #7a3a5a;
+            width: 100%;
+        }
+
+        .buscador input::placeholder {
+            color: #c490aa;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -89,6 +127,17 @@
         <p>Un espacio dulce y tranquilo para acercarte a Dios cada dia con fe y amor.</p>
         <div class="flores">&#x1F338; &#x1F339; &#x1F338;</div>
     </header>
+
+    <nav>
+        <div class="buscador">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="7"/>
+                <line x1="16.5" y1="16.5" x2="22" y2="22"/>
+            </svg>
+            <input type="text" placeholder="Busca el tipo de devocional que deseas...">
+        </div>
+    </nav>
 
 </body>
 </html>
