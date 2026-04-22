@@ -16,7 +16,7 @@
         .hero {
             background: linear-gradient(135deg, #ffe4ec, #ffd6f0, #e8d5ff);
             text-align: center;
-            padding: 60px 20px 50px;
+            padding: 60px 20px 30px;
             position: relative;
             overflow: hidden;
         }
@@ -33,7 +33,7 @@
             width: 300px;
             height: 300px;
             background: #f9a8d4;
-            top: -80px;
+            top: -90px;
             left: -80px;
         }
 
@@ -117,6 +117,138 @@
             color: #c490aa;
             font-style: italic;
         }
+
+        /* Contenedor principal */
+        .seccion {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 36px;
+            padding: 50px 40px;
+        }
+
+        /* Primer div — tarjeta devocional */
+        .tarjeta {
+            background-color: #ffe8f0;
+            border-radius: 24px;
+            padding: 36px 40px;
+            max-width: 460px;
+            box-shadow: 0 4px 20px rgba(214, 63, 122, 0.08);
+        }
+
+        .tarjeta h2 {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.4rem;
+            color: #b5507a;
+            margin: 0 0 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            text-shadow: 1px 1px 0 #fff, 2px 3px 8px rgba(255,255,255,0.9);
+        }
+
+        .tarjeta p {
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.97rem;
+            color: #7a3a5a;
+            line-height: 1.9;
+            margin: 0 0 12px;
+            white-space: pre-line;
+        }
+
+        .tarjeta img {
+            width: 100%;
+            border-radius: 16px;
+            margin-top: 20px;
+            mix-blend-mode: multiply;
+            background: transparent;
+        }
+
+        /* Segundo div — pasos (izquierda) */
+        .imagen-lado {
+            order: -1;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 360px;
+            background-color: #fdf0f7;
+            border-radius: 24px;
+            padding: 32px 36px;
+            box-shadow: 0 4px 20px rgba(214, 63, 122, 0.06);
+        }
+
+        .imagen-lado h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: #b5507a;
+            margin: 0 0 10px;
+            text-shadow: 1px 1px 0 #fff, 0 2px 6px rgba(255,255,255,0.95);
+        }
+
+        .imagen-lado ul {
+            padding-left: 18px;
+            margin: 0;
+        }
+
+        .imagen-lado li {
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.97rem;
+            font-weight: 700;
+            color: #c2185b;
+            margin-bottom: 14px;
+            line-height: 1.5;
+        }
+
+        .imagen-lado li p {
+            font-weight: 400;
+            font-size: 0.9rem;
+            color: #7a3a5a;
+            margin: 4px 0 0;
+            line-height: 1.7;
+        }
+
+        .imagen-lado > p {
+            font-family: 'Pacifico', cursive;
+            font-size: 0.95rem;
+            color: #b5507a;
+            text-align: center;
+            margin: 6px 0 0;
+            opacity: 0.8;
+        }
+
+        /* Barra lateral de categorias */
+        .sidebar {
+            order: -2;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            min-width: 150px;
+            position: sticky;
+            top: 30px;
+            align-self: flex-start;
+        }
+
+        .sidebar a {
+            display: block;
+            text-decoration: none;
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: #b5507a;
+            background-color: #fce8f3;
+            border-radius: 50px;
+            padding: 10px 20px;
+            text-align: center;
+            transition: background-color 0.25s, color 0.25s, transform 0.25s, box-shadow 0.25s;
+        }
+
+        .sidebar a:hover {
+            background-color: #d63f7a;
+            color: #fff;
+            transform: scale(1.07);
+            box-shadow: 0 6px 18px rgba(214, 63, 122, 0.35);
+        }
     </style>
 </head>
 <body>
@@ -125,7 +257,6 @@
         <div class="hero-icon">&#x1F497;</div>
         <h1>Devocionales</h1>
         <p>Un espacio dulce y tranquilo para acercarte a Dios cada dia con fe y amor.</p>
-        <div class="flores">&#x1F338; &#x1F339; &#x1F338;</div>
     </header>
 
     <nav>
@@ -138,5 +269,63 @@
             <input type="text" placeholder="Busca el tipo de devocional que deseas...">
         </div>
     </nav>
+    <div class="seccion">
+        <div class="tarjeta">
+            <h2>Enamorate de Dios por medio de su palabra</h2>
+           
+            <p>"Enamorarse de Dios no es solo sentir, es descubrirlo cada día en su Palabra.
+            Es abrir la Biblia y encontrar en cada versículo una voz que consuela, guía y transforma el corazón.
+
+            Cuando lees su Palabra, es como si Dios mismo te hablara en silencio, recordándote que no estás solo, que eres amado y que tienes un propósito.
+
+            En su Palabra encuentras paz en medio del caos, esperanza cuando todo parece difícil, y luz cuando no sabes qué camino tomar.
+
+            Enamorarse de Dios es dejar que su verdad cambie tu manera de pensar, de sentir y de vivir. Es aprender a confiar, incluso cuando no entiendes todo.
+
+            Y poco a poco, sin darte cuenta, su presencia se vuelve parte de tu vida diaria… y tu corazón empieza a descansar en Él."</p>
+           <img src="imagen1.jpg" alt="Devocional">
+        </div>
+        <div class="imagen-lado">
+            <h1>Pasos Para tu devocional </h1>
+            <div>
+                <ul>
+                    <li>Busca un lugar tranquilo
+                        <p>Un espacio donde puedas estar sin distracciones (celular en silencio si puedes).</p>
+                    </li>
+                    <li>Ora al empezar
+                        <p>Algo simple como: "Dios, abre mi corazón para entender tu palabra hoy".</p>
+                    </li>
+                    <li>Lee la Biblia
+                        <p>Elige un pasaje corto (por ejemplo un salmo o un capítulo de Mateo, Marcos, etc.).
+                          No leas rápido; intenta entender qué está diciendo.</p>
+                    </li>
+                    <li>Reflexiona (medita)
+                        <p>¿Qué me está diciendo Dios aquí?
+                         ¿Qué puedo aprender hoy?
+                        ¿Qué debo cambiar o mejorar?</p>
+                    </li>
+                    <li>Escribe (opcional pero muy bueno)
+                        <p>Anota una idea, una frase que te haya tocado o lo que entendiste.</p>
+                    </li>
+                    <li>Ora al final
+                        <p>Agradece y pide ayuda para aplicar lo aprendido.</p>
+                    </li>
+                </ul>
+            </div>
+            <p>frase motivadora y corta</p>
+            <p>“Crecer en el amor de Dios es aprender a confiar más en Él cada día, incluso cuando no entiendo el camino.”</p>
+           
+        </div>
+        <div class="sidebar">
+            <a href="">Esperanza</a>
+            <a href="">Amor</a>
+            <a href="">Dominio Propio</a>
+            <a href="">Alegria</a>
+            <a href="">Fortaleza</a>
+            <a href="">Proposito</a>
+            <a href="">Pasion</a>
+            <a href="">Servicio</a>
+        </div>
+    </div>
 </body>
 </html>
